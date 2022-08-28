@@ -1,0 +1,203 @@
+/*Header*/
+.bg-light {
+    background-color: black !important;
+
+    .logo_header {
+        height: 9vh;
+    }
+
+    .navbar-toggler-icon {
+        width: 33px;
+        height: 33px;
+        background-color: #CA054D;
+        border: 1px solid #CA054D;
+        border-radius: 5px;
+    }
+
+    .nav-link.active {
+        color: white !important;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: black;
+
+        &:hover {
+            color: #CA054D !important;
+        }
+    }
+}
+
+/*------*/
+
+/*Contenido=main*/
+main {
+
+    /* Bloque de cuidado de la piel */
+    .bloque_cuidado_piel {
+        display: flex;
+        flex-direction: column;
+
+        .texto_bloque_cuidado_piel {
+            border: 1px #d4c9cd solid;
+            border-radius: 12px;
+            padding: 2px;
+            background-color: #d4c9cd;
+        }
+
+        .lista_cuidado_piel {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+
+            li p {
+                border: 1px #d4c9cd solid;
+                border-radius: 12px;
+                background-color: #d4c9cd;
+            }
+        }
+    }
+
+    /* Bloque de datos  */
+    .bloque_datos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .dato {
+            margin: 10px 0px 10px 0px;
+
+            &:hover {
+                box-shadow: 11px 15px 5px 0px rgb(0 0 0 / 16%);
+            }
+        }
+    }
+
+    /* Bloque quienes somos */
+    .bloque_quienes_somos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .link_quienes_somos {
+            text-decoration: none;
+            color: white;
+            background-color: #CA054D;
+            border: 1px #CA054D solid;
+            border-radius: 10px;
+            padding: 5px;
+
+            &:hover {
+                color: black;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+
+        img {
+            padding: 0px;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    /* Bloque productos */
+    .bloque_productos {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+        border-radius: 10px;
+
+        .titulo_productos {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 5px;
+            color: white;
+            font-size: 30px;
+        }
+
+        div {
+            margin: 10px 0px 10px 0px;
+
+            .card_producto {
+                .link_producto {
+                    background-color: #CA054D;
+                    border-color: #CA054D;
+
+                    &:hover {
+                        border-color: #CA054D;
+                        background-color: #CA054D;
+                        color: black;
+                        transform: scale(1.1);
+                        transition: 0.3s;
+                    }
+
+                    &:focus {
+                        border-color: #CA054D;
+                        background-color: #CA054D;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+                }
+            }
+
+        }
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+    .logo_footer {
+        margin: 5px 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+        margin: 5px 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        li {
+            margin: 0px 10px;
+
+            .logo_red_social {
+                width: 35px;
+                height: 40px;
+            }
+
+            .link_volver_arriba {
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: white;
+                border: 1px white solid;
+                padding: 5px;
+
+                &:hover {
+                    border-color: #CA054D;
+                    color: #CA054D;
+                }
+            }
+        }
+    }
+
+    p {
+        color: white;
+    }
+}

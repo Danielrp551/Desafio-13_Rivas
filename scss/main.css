@@ -1,1 +1,172 @@
-/*# sourceMappingURL=main.css.map */
+/*Estilo del index*/
+/*Header*/
+.bg-light {
+  background-color: black !important;
+}
+.bg-light .logo_header {
+  height: 9vh;
+}
+.bg-light .navbar-toggler-icon {
+  width: 33px;
+  height: 33px;
+  background-color: #CA054D;
+  border: 1px solid #CA054D;
+  border-radius: 5px;
+}
+.bg-light .nav-link.active {
+  color: white !important;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+}
+.bg-light .nav-link.active:hover {
+  color: #CA054D !important;
+}
+
+/*------*/
+/*Contenido=main*/
+main {
+  /* Bloque de cuidado de la piel */
+  /* Bloque de datos  */
+  /* Bloque quienes somos */
+  /* Bloque productos */
+}
+main .bloque_cuidado_piel {
+  display: flex;
+  flex-direction: column;
+}
+main .bloque_cuidado_piel .texto_bloque_cuidado_piel {
+  border: 1px #d4c9cd solid;
+  border-radius: 12px;
+  padding: 2px;
+  background-color: #d4c9cd;
+}
+main .bloque_cuidado_piel .lista_cuidado_piel {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+main .bloque_cuidado_piel .lista_cuidado_piel li p {
+  border: 1px #d4c9cd solid;
+  border-radius: 12px;
+  background-color: #d4c9cd;
+}
+main .bloque_datos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main .bloque_datos .dato {
+  margin: 10px 0px 10px 0px;
+}
+main .bloque_datos .dato:hover {
+  box-shadow: 11px 15px 5px 0px rgba(0, 0, 0, 0.16);
+}
+main .bloque_quienes_somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .bloque_quienes_somos .link_quienes_somos {
+  text-decoration: none;
+  color: white;
+  background-color: #CA054D;
+  border: 1px #CA054D solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+main .bloque_quienes_somos .link_quienes_somos:hover {
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+main .bloque_quienes_somos img {
+  padding: 0px;
+}
+main .bloque_quienes_somos img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+main .bloque_productos {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+  border-radius: 10px;
+}
+main .bloque_productos .titulo_productos {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+main .bloque_productos div {
+  margin: 10px 0px 10px 0px;
+}
+main .bloque_productos div .card_producto .link_producto {
+  background-color: #CA054D;
+  border-color: #CA054D;
+}
+main .bloque_productos div .card_producto .link_producto:hover {
+  border-color: #CA054D;
+  background-color: #CA054D;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+main .bloque_productos div .card_producto .link_producto:focus {
+  border-color: #CA054D;
+  background-color: #CA054D;
+}
+main .bloque_productos div .card_producto:hover {
+  box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.footer .logo_footer {
+  margin: 5px 0px;
+  width: 50px;
+  height: 50px;
+}
+.footer ul {
+  margin: 5px 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.footer ul li {
+  margin: 0px 10px;
+}
+.footer ul li .logo_red_social {
+  width: 35px;
+  height: 40px;
+}
+.footer ul li .link_volver_arriba {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: white;
+  border: 1px white solid;
+  padding: 5px;
+}
+.footer ul li .link_volver_arriba:hover {
+  border-color: #CA054D;
+  color: #CA054D;
+}
+.footer p {
+  color: white;
+}
+
+/*Estilo de nosotros*//*# sourceMappingURL=main.css.map */

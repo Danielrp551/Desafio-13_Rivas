@@ -1,3 +1,4 @@
+/*Index*/
 /*Header*/
 .bg-light {
     background-color: black !important;
@@ -199,5 +200,121 @@ main {
 
     p {
         color: white;
+    }
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px) {
+
+    /*Header*/
+    header {
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+    }
+
+    /* Bloque cuidado de la piel */
+    .bloque_cuidado_piel {
+
+        .lista_cuidado_piel {
+            flex-direction: row !important;
+            flex-wrap: nowrap;
+
+            li {
+                text-align: center;
+                width: 25%;
+                height: 360px;
+
+                h2 {
+                    margin: 0px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 85px;
+                }
+
+                p {
+                    padding: 3px;
+                    display: flex;
+                    height: 240px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    /* Bloque de datos  */
+    .bloque_datos {
+        flex-direction: row !important;
+        justify-content: space-between;
+
+        .dato {
+            margin: 10px !important;
+        }
+    }
+
+    /* Bloque quienes somos */
+    .bloque_quienes_somos {
+        flex-direction: row !important;
+        justify-content: space-between;
+
+        .card {
+            margin: 10px;
+            width: 40%;
+            height: 43vh;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                .link_quienes_somos {
+                    text-decoration: none;
+                    color: white;
+                    background-color: #CA054D;
+                    border: 1px #CA054D solid;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        img {
+            margin: 10px;
+            width: 50%;
+            height: 43vh;
+        }
+    }
+
+    /* Bloque productos */
+    .cards_productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        div {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            img {
+                height: 30vh;
+            }
+
+            div {
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+        }
     }
 }

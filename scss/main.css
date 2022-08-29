@@ -421,4 +421,138 @@ main .bloque_productos div .card_producto:hover {
     width: 45%;
     height: 30vh;
   }
+}
+/*Estilo de productos*/
+/* Productos */
+.contenedor_productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor_productos .filtro_producto {
+  padding: 2%;
+  width: 80%;
+  text-align: center;
+  border: 1px whitesmoke solid;
+  border-radius: 12px;
+  background-color: whitesmoke;
+}
+.contenedor_productos .filtro_producto .titulo_filtro {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4vh;
+}
+.contenedor_productos .filtro_producto .filtro {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contenedor_productos .filtro_producto .filtro button {
+  background-color: #CA054D;
+  border: 1px #CA054D solid;
+  color: white;
+}
+.contenedor_productos .filtro_producto .filtro button:hover {
+  background-color: #CA054D;
+  border: 1px #CA054D solid;
+}
+.contenedor_productos .filtro_producto .filtro button:focus {
+  background-color: #CA054D;
+  border: 1px #CA054D solid;
+}
+.contenedor_productos .barra_filtro {
+  display: none;
+}
+.contenedor_productos .productos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor_productos .productos .product_card {
+  width: 70%;
+  margin: 10px;
+}
+.contenedor_productos .productos .product_card:hover {
+  box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+.contenedor_productos .productos .product_card .link_producto {
+  background-color: #CA054D;
+  border-color: #CA054D;
+}
+.contenedor_productos .productos .product_card .link_producto:hover {
+  border-color: #CA054D;
+  background-color: #CA054D;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.contenedor_productos .productos .product_card .link_producto:focus {
+  border-color: #CA054D;
+  background-color: #CA054D;
+}
+.contenedor_productos .productos .product_card .link_producto:active {
+  box-shadow: none;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+/* Dispositivos medianos (desktop) */
+@media (min-width: 768px) {
+  /* Productos */
+  .contenedor_productos {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .contenedor_productos .filtro_producto {
+    display: none;
+  }
+  .contenedor_productos .barra_filtro {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 1rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 21rem;
+    height: 100%;
+    padding: 2%;
+  }
+  .contenedor_productos .barra_filtro h5 {
+    font-size: 150%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #CA054D;
+  }
+  .contenedor_productos .barra_filtro ul {
+    list-style: none;
+    margin: 10px 0px 5px 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contenedor_productos .barra_filtro ul li {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .contenedor_productos .barra_filtro ul li a {
+    text-decoration: none;
+    color: rgb(51, 49, 49);
+  }
+  .contenedor_productos .productos {
+    margin-top: 0px;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contenedor_productos .productos .product_card {
+    width: 15rem;
+    height: 28rem;
+  }
+  .contenedor_productos .productos .product_card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Estilo del index*/
 /*Index*/
 /*Header*/
@@ -554,5 +555,74 @@ main .bloque_productos div .card_producto:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+/*Estilo de marcas*/
+/* Marcas */
+.titulo_marcas {
+  text-decoration: underline;
+  font-size: 8vh;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bloque_marcas {
+  background-image: linear-gradient(to bottom, #35ca74, #22a884);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloque_marcas img {
+  width: 85%;
+  height: 45vh;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bloque_marcas img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/*Reseñas*/
+.bloque_reseñas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.bloque_reseñas iframe {
+  width: 90%;
+  height: 40vh;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+/* Dispositivos medianos (desktop) */
+@media (min-width: 768px) {
+  /* Marcas */
+  .titulo_marcas {
+    font-size: 6vh;
+  }
+  .bloque_marcas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bloque_marcas img {
+    width: 35%;
+    height: 40vh;
+  }
+  /*Reseñas*/
+  .bloque_reseñas iframe {
+    width: 40%;
   }
 }/*# sourceMappingURL=main.css.map */

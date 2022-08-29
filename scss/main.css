@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Estilos de Wow Make Up*/
 /*Estilo del index*/
 /*Index*/
 /*Header*/
@@ -247,7 +248,7 @@ main .bloque_productos div .card_producto:hover {
     justify-content: space-around;
   }
   .cards_productos div {
-    margin: 10px;
+    margin: 10px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -624,5 +625,91 @@ main .bloque_productos div .card_producto:hover {
   /*Reseñas*/
   .bloque_reseñas iframe {
     width: 40%;
+  }
+}
+/*Estilo de contacto*/
+/* Contacto */
+.bloque_0_formulario {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloque_0_formulario h3 {
+  text-decoration: underline;
+  font-size: 7vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.bloque_0_formulario .bloque_1_formulario {
+  text-align: center;
+  border: 1px #22a884 solid;
+  border-radius: 10px;
+  width: 90%;
+  padding: 2%;
+}
+.bloque_0_formulario .bloque_1_formulario .caja_texto {
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+}
+.bloque_0_formulario .bloque_1_formulario .caja_texto:focus {
+  border-radius: 5px;
+  background-color: rgba(22, 219, 147, 0.2588235294);
+  border: none;
+}
+.bloque_0_formulario .bloque_1_formulario .mensaje {
+  height: 15vh;
+}
+.bloque_0_formulario .bloque_1_formulario .boton {
+  border: 1px #22a884 solid;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, #35ca74, #22a884);
+  border-radius: 5px;
+  color: white;
+}
+.bloque_0_formulario .bloque_1_formulario .boton:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Ubicacion */
+.bloque_0_ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloque_0_ubicacion h3 {
+  text-decoration: underline;
+  font-size: 7vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.bloque_0_ubicacion .bloque_1_ubicacion {
+  background-image: linear-gradient(to bottom, #0a919e, #0045ff);
+  border-radius: 10px;
+  padding: 3% 0px;
+  text-align: center;
+}
+.bloque_0_ubicacion .bloque_1_ubicacion iframe {
+  width: 95%;
+  height: 50vh;
+  border-radius: 12px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+/* Dispositivos medianos (desktop) */
+@media (min-width: 768px) {
+  /* Contacto */
+  .bloque_0_formulario .bloque_1_formulario {
+    width: 75%;
+  }
+  /* Ubicacion */
+  .bloque_0_ubicacion .bloque_1_ubicacion {
+    width: 75%;
+  }
+  .bloque_0_ubicacion .bloque_1_ubicacion iframe {
+    width: 85%;
+    height: 50vh;
+    border-radius: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

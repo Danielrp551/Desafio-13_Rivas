@@ -1,0 +1,106 @@
+/* Contacto */
+
+.bloque_0_formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        text-decoration: underline;
+        font-size: 7vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .bloque_1_formulario {
+        text-align: center;
+        border: 1px #22a884 solid;
+        border-radius: 10px;
+        width: 90%;
+        padding: 2%;
+
+        .caja_texto {
+            width: 80%;
+            height: 30px;
+            margin: 5px;
+
+            &:focus {
+                border-radius: 5px;
+                background-color: #16db9342;
+                border: none;
+            }
+        }
+
+        .mensaje {
+            height: 15vh;
+        }
+
+        .boton {
+            border: 1px #22a884 solid;
+            padding: 5px;
+            background-image: linear-gradient(to bottom, #35ca74, #22a884);
+            border-radius: 5px;
+            color: white;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+/* Ubicacion */
+
+.bloque_0_ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        text-decoration: underline;
+        font-size: 7vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .bloque_1_ubicacion {
+        background-image: linear-gradient(to bottom, #0a919e, #0045ff);
+        border-radius: 10px;
+        padding: 3% 0px;
+        text-align: center;
+
+        iframe {
+            width: 95%;
+            height: 50vh;
+            border-radius: 12px;
+        }
+    }
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos medianos (desktop) */
+@media(min-width: 768px) {
+    /* Contacto */
+
+    .bloque_0_formulario {
+        .bloque_1_formulario {
+            width: 75%;
+        }
+    }
+
+    /* Ubicacion */
+
+    .bloque_0_ubicacion {
+        .bloque_1_ubicacion {
+            width: 75%;
+
+            iframe {
+                width: 85%;
+                height: 50vh;
+                border-radius: 12px;
+            }
+        }
+    }
+}

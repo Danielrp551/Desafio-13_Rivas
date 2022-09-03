@@ -1,27 +1,52 @@
 @charset "UTF-8";
 /*Estilos de Wow Make Up*/
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Qwitcher+Grypen&display=swap");
+.Nosotros-2, .Nosotros-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.Nosotros-2__card, .Nosotros-1__card {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Formulario div .boton:hover, .Marcas img:hover, .Contenedor-Productos .Productos__card .link_producto:hover, .Nosotros-2 img:hover, .Nosotros-1 img:hover, main .Ofertas div .Ofertas__producto .Ofertas__link:hover, main .Quienes-Somos img:hover, main .Quienes-Somos__link:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 /*Estilo del index*/
 /*Index*/
 /*Header*/
-.bg-light {
+.header .bg-light {
   background-color: black !important;
 }
-.bg-light .logo_header {
+.header .bg-light .header__logo {
   height: 9vh;
 }
-.bg-light .navbar-toggler-icon {
+.header .bg-light .navbar-toggler-icon {
   width: 33px;
   height: 33px;
   background-color: #CA054D;
   border: 1px solid #CA054D;
   border-radius: 5px;
 }
-.bg-light .nav-link.active {
+.header .bg-light .nav-link.active {
   color: white !important;
   font-family: "Courier New", Courier, monospace;
   background-color: black;
 }
-.bg-light .nav-link.active:hover {
+.header .bg-light .nav-link.active:hover {
   color: #CA054D !important;
 }
 
@@ -33,46 +58,52 @@ main {
   /* Bloque quienes somos */
   /* Bloque productos */
 }
-main .bloque_cuidado_piel {
+main .Cuidado-Piel {
   display: flex;
   flex-direction: column;
 }
-main .bloque_cuidado_piel .texto_bloque_cuidado_piel {
+main .Cuidado-Piel__texto {
   border: 1px #d4c9cd solid;
   border-radius: 12px;
   padding: 2px;
   background-color: #d4c9cd;
+  font-family: "Kalam", cursive;
 }
-main .bloque_cuidado_piel .lista_cuidado_piel {
+main .Cuidado-Piel__lista {
   padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
 }
-main .bloque_cuidado_piel .lista_cuidado_piel li p {
+main .Cuidado-Piel__lista li p {
   border: 1px #d4c9cd solid;
   border-radius: 12px;
   background-color: #d4c9cd;
+  font-family: "Kalam", cursive;
 }
-main .bloque_datos {
+main .Cuidado-Piel__lista li h2 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 43px;
+}
+main .Datos {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-main .bloque_datos .dato {
+main .Datos__card {
   margin: 10px 0px 10px 0px;
 }
-main .bloque_datos .dato:hover {
+main .Datos__card:hover {
   box-shadow: 11px 15px 5px 0px rgba(0, 0, 0, 0.16);
 }
-main .bloque_quienes_somos {
+main .Quienes-Somos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .bloque_quienes_somos .link_quienes_somos {
+main .Quienes-Somos__link {
   text-decoration: none;
   color: white;
   background-color: #CA054D;
@@ -80,19 +111,13 @@ main .bloque_quienes_somos .link_quienes_somos {
   border-radius: 10px;
   padding: 5px;
 }
-main .bloque_quienes_somos .link_quienes_somos:hover {
+main .Quienes-Somos__link:hover {
   color: black;
-  transform: scale(1.1);
-  transition: 0.3s;
 }
-main .bloque_quienes_somos img {
+main .Quienes-Somos img {
   padding: 0px;
 }
-main .bloque_quienes_somos img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-main .bloque_productos {
+main .Ofertas {
   width: 95%;
   display: flex;
   flex-direction: column;
@@ -100,31 +125,29 @@ main .bloque_productos {
   background-image: linear-gradient(to bottom, #CA054D, #ff006c);
   border-radius: 10px;
 }
-main .bloque_productos .titulo_productos {
+main .Ofertas__titulo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 5px;
   color: white;
   font-size: 30px;
 }
-main .bloque_productos div {
+main .Ofertas div {
   margin: 10px 0px 10px 0px;
 }
-main .bloque_productos div .card_producto .link_producto {
+main .Ofertas div .Ofertas__producto .Ofertas__link {
   background-color: #CA054D;
   border-color: #CA054D;
 }
-main .bloque_productos div .card_producto .link_producto:hover {
-  border-color: #CA054D;
+main .Ofertas div .Ofertas__producto .Ofertas__link:hover {
   background-color: #CA054D;
+  border-color: #CA054D;
   color: black;
-  transform: scale(1.1);
-  transition: 0.3s;
 }
-main .bloque_productos div .card_producto .link_producto:focus {
-  border-color: #CA054D;
+main .Ofertas div .Ofertas__producto .Ofertas__link:focus {
   background-color: #CA054D;
+  border-color: #CA054D;
 }
-main .bloque_productos div .card_producto:hover {
+main .Ofertas div .Ofertas__producto:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
@@ -136,7 +159,7 @@ main .bloque_productos div .card_producto:hover {
   align-items: center;
   background-color: black;
 }
-.footer .logo_footer {
+.footer__logo {
   margin: 5px 0px;
   width: 50px;
   height: 50px;
@@ -177,87 +200,80 @@ main .bloque_productos div .card_producto:hover {
 /* Dispositivos medianos (desktop) */
 @media (min-width: 768px) {
   /*Header*/
-  header .navbar-collapse {
+  .header .navbar-collapse {
     justify-content: flex-end;
   }
   /* Bloque cuidado de la piel */
-  .bloque_cuidado_piel .lista_cuidado_piel {
+  .Cuidado-Piel__lista {
     flex-direction: row !important;
     flex-wrap: nowrap;
   }
-  .bloque_cuidado_piel .lista_cuidado_piel li {
+  .Cuidado-Piel__lista li {
     text-align: center;
     width: 25%;
     height: 360px;
   }
-  .bloque_cuidado_piel .lista_cuidado_piel li h2 {
+  .Cuidado-Piel__lista li h2 {
     margin: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 85px;
+    font-size: 55px;
   }
-  .bloque_cuidado_piel .lista_cuidado_piel li p {
+  .Cuidado-Piel__lista li p {
     padding: 3px;
     display: flex;
     height: 240px;
     align-items: center;
   }
   /* Bloque de datos  */
-  .bloque_datos {
+  .Datos {
     flex-direction: row !important;
     justify-content: space-between;
   }
-  .bloque_datos .dato {
+  .Datos__card {
     margin: 10px !important;
   }
   /* Bloque quienes somos */
-  .bloque_quienes_somos {
+  .Quienes-Somos {
     flex-direction: row !important;
     justify-content: space-between;
   }
-  .bloque_quienes_somos .card {
+  .Quienes-Somos .card {
     margin: 10px;
     width: 40%;
     height: 43vh;
   }
-  .bloque_quienes_somos .card .card-body {
+  .Quienes-Somos .card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
   }
-  .bloque_quienes_somos .card .card-body .link_quienes_somos {
-    text-decoration: none;
-    color: white;
-    background-color: #CA054D;
-    border: 1px #CA054D solid;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  .bloque_quienes_somos img {
+  .Quienes-Somos img {
     margin: 10px;
     width: 50%;
     height: 43vh;
   }
   /* Bloque productos */
-  .cards_productos {
+  .Ofertas__productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .cards_productos div {
+  .Ofertas__productos div {
     margin: 10px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
   }
-  .cards_productos div img {
+  .Ofertas__productos div img {
     height: 30vh;
   }
-  .cards_productos div div {
+  .Ofertas__productos div div {
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -269,88 +285,44 @@ main .bloque_productos div .card_producto:hover {
 /* NOSOTROS */
 /*Contenido*/
 /*Bloques nosotros*/
-.bloque_1_nosotros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  background-image: linear-gradient(to bottom, #CA054D, #ff006c);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 10px;
-}
-.bloque_1_nosotros .nosotros_card {
-  margin: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.bloque_1_nosotros .nosotros_card:hover {
+.Nosotros-1__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
-.bloque_1_nosotros .nosotros_card div {
+.Nosotros-1__card div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.bloque_1_nosotros img {
+.Nosotros-1 img {
   padding: 0px;
 }
-.bloque_1_nosotros img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-.bloque_2_nosotros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  background-image: linear-gradient(to bottom, #CA054D, #ff006c);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 10px;
-}
-.bloque_2_nosotros .nosotros_card {
-  margin: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.bloque_2_nosotros .nosotros_card:hover {
+.Nosotros-2__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
-.bloque_2_nosotros .nosotros_card div {
+.Nosotros-2__card div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.bloque_2_nosotros img {
+.Nosotros-2 img {
   padding: 0px;
 }
-.bloque_2_nosotros img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 /* Bloque Fundadoras */
-.bloque_fundadoras {
+.Fundadoras {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bloque_fundadoras .titulo_fundadoras {
+.Fundadoras__titulo {
   font-family: "Courier New", Courier, monospace;
   font-size: 8vh;
 }
-.bloque_fundadoras .fundadora {
+.Fundadoras__card {
   margin-top: 10px;
 }
-.bloque_fundadoras .fundadora:hover {
+.Fundadoras__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
@@ -359,79 +331,79 @@ main .bloque_productos div .card_producto:hover {
 /* Dispositivos medianos (desktop) */
 @media (min-width: 768px) {
   /*Bloques nosotros*/
-  .bloque_1_nosotros {
+  .Nosotros-1 {
     flex-direction: row;
     justify-content: space-between;
   }
-  .bloque_1_nosotros .nosotros_card {
+  .Nosotros-1__card {
     margin: 10px;
     width: 40%;
     height: 45vh;
   }
-  .bloque_1_nosotros img {
+  .Nosotros-1 img {
     width: 50%;
     height: 45vh;
     margin: 10px;
   }
-  .bloque_2_nosotros {
+  .Nosotros-2 {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .bloque_2_nosotros .nosotros_card {
+  .Nosotros-2__card {
     margin: 10px;
     width: 40%;
     height: 45vh;
   }
-  .bloque_2_nosotros img {
+  .Nosotros-2 img {
     width: 50%;
     height: 45vh;
     margin: 10px;
   }
   /* Bloque Fundadoras */
-  .bloque_fundadoras .cards_fundadoras {
+  .Fundadoras__cards {
     display: flex;
     flex-direction: row;
     margin: 10px;
     justify-content: space-between;
   }
-  .bloque_fundadoras .cards_fundadoras .fundadora {
+  .Fundadoras__cards .Fundadoras__card {
     width: 40%;
   }
 }
 /* Dispositivos grandes (desktop) */
 @media (min-width: 1024px) {
   /*Bloques nosotros*/
-  .bloque_1_nosotros {
+  .Nosotros-1 {
     justify-content: space-around;
   }
-  .bloque_1_nosotros .nosotros_card {
+  .Nosotros-1__card {
     width: 35%;
     height: 30vh;
   }
-  .bloque_1_nosotros img {
+  .Nosotros-1 img {
     width: 45%;
     height: 30vh;
   }
-  .bloque_2_nosotros {
+  .Nosotros-2 {
     justify-content: space-around;
   }
-  .bloque_2_nosotros .nosotros_card {
+  .Nosotros-2__card {
     width: 35%;
     height: 30vh;
   }
-  .bloque_2_nosotros img {
+  .Nosotros-2 img {
     width: 45%;
     height: 30vh;
   }
 }
 /*Estilo de productos*/
 /* Productos */
-.contenedor_productos {
+.Contenedor-Productos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contenedor_productos .filtro_producto {
+.Contenedor-Productos .Producto-Filtro {
   padding: 2%;
   width: 80%;
   text-align: center;
@@ -439,59 +411,57 @@ main .bloque_productos div .card_producto:hover {
   border-radius: 12px;
   background-color: whitesmoke;
 }
-.contenedor_productos .filtro_producto .titulo_filtro {
+.Contenedor-Productos .Producto-Filtro__titulo {
   font-family: "Courier New", Courier, monospace;
   font-size: 4vh;
 }
-.contenedor_productos .filtro_producto .filtro {
+.Contenedor-Productos .Producto-Filtro__filtros {
   display: flex;
   justify-content: space-evenly;
 }
-.contenedor_productos .filtro_producto .filtro button {
+.Contenedor-Productos .Producto-Filtro__filtros button {
   background-color: #CA054D;
   border: 1px #CA054D solid;
   color: white;
 }
-.contenedor_productos .filtro_producto .filtro button:hover {
+.Contenedor-Productos .Producto-Filtro__filtros button:hover {
   background-color: #CA054D;
   border: 1px #CA054D solid;
 }
-.contenedor_productos .filtro_producto .filtro button:focus {
+.Contenedor-Productos .Producto-Filtro__filtros button:focus {
   background-color: #CA054D;
   border: 1px #CA054D solid;
 }
-.contenedor_productos .barra_filtro {
+.Contenedor-Productos .Filtro-Barra {
   display: none;
 }
-.contenedor_productos .productos {
+.Contenedor-Productos .Productos {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contenedor_productos .productos .product_card {
+.Contenedor-Productos .Productos__card {
   width: 70%;
   margin: 10px;
 }
-.contenedor_productos .productos .product_card:hover {
+.Contenedor-Productos .Productos__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
-.contenedor_productos .productos .product_card .link_producto {
+.Contenedor-Productos .Productos__card .link_producto {
   background-color: #CA054D;
   border-color: #CA054D;
 }
-.contenedor_productos .productos .product_card .link_producto:hover {
-  border-color: #CA054D;
+.Contenedor-Productos .Productos__card .link_producto:hover {
   background-color: #CA054D;
+  border-color: #CA054D;
   color: black;
-  transform: scale(1.1);
-  transition: 0.3s;
 }
-.contenedor_productos .productos .product_card .link_producto:focus {
-  border-color: #CA054D;
+.Contenedor-Productos .Productos__card .link_producto:focus {
   background-color: #CA054D;
+  border-color: #CA054D;
 }
-.contenedor_productos .productos .product_card .link_producto:active {
+.Contenedor-Productos .Productos__card .link_producto:active {
   box-shadow: none;
 }
 
@@ -500,14 +470,14 @@ main .bloque_productos div .card_producto:hover {
 /* Dispositivos medianos (desktop) */
 @media (min-width: 768px) {
   /* Productos */
-  .contenedor_productos {
+  .Contenedor-Productos {
     flex-direction: row;
     align-items: flex-start;
   }
-  .contenedor_productos .filtro_producto {
+  .Contenedor-Productos .Producto-Filtro {
     display: none;
   }
-  .contenedor_productos .barra_filtro {
+  .Contenedor-Productos .Filtro-Barra {
     display: flex;
     flex-direction: column;
     margin: 10px 0px 0px 1rem;
@@ -517,12 +487,12 @@ main .bloque_productos div .card_producto:hover {
     height: 100%;
     padding: 2%;
   }
-  .contenedor_productos .barra_filtro h5 {
+  .Contenedor-Productos .Filtro-Barra h5 {
     font-size: 150%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     color: #CA054D;
   }
-  .contenedor_productos .barra_filtro ul {
+  .Contenedor-Productos .Filtro-Barra ul {
     list-style: none;
     margin: 10px 0px 5px 0px;
     padding: 0;
@@ -531,15 +501,15 @@ main .bloque_productos div .card_producto:hover {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .contenedor_productos .barra_filtro ul li {
+  .Contenedor-Productos .Filtro-Barra ul li {
     margin-top: 2%;
     margin-bottom: 2%;
   }
-  .contenedor_productos .barra_filtro ul li a {
+  .Contenedor-Productos .Filtro-Barra ul li a {
     text-decoration: none;
     color: rgb(51, 49, 49);
   }
-  .contenedor_productos .productos {
+  .Contenedor-Productos .Productos {
     margin-top: 0px;
     width: 60%;
     flex-direction: row;
@@ -547,11 +517,11 @@ main .bloque_productos div .card_producto:hover {
     justify-content: space-around;
     align-items: center;
   }
-  .contenedor_productos .productos .product_card {
+  .Contenedor-Productos .Productos__card {
     width: 15rem;
     height: 28rem;
   }
-  .contenedor_productos .productos .product_card div {
+  .Contenedor-Productos .Productos__card div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -567,7 +537,7 @@ main .bloque_productos div .card_producto:hover {
   font-family: "Courier New", Courier, monospace;
 }
 
-.bloque_marcas {
+.Marcas {
   background-image: linear-gradient(to bottom, #35ca74, #22a884);
   border-radius: 12px;
   padding: 10px;
@@ -576,7 +546,7 @@ main .bloque_productos div .card_producto:hover {
   flex-direction: column;
   align-items: center;
 }
-.bloque_marcas img {
+.Marcas img {
   width: 85%;
   height: 45vh;
   background-color: white;
@@ -584,21 +554,19 @@ main .bloque_productos div .card_producto:hover {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.bloque_marcas img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
+.Marcas img:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
 /*Reseñas*/
-.bloque_reseñas {
+.Reseñas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-.bloque_reseñas iframe {
+.Reseñas iframe {
   width: 90%;
   height: 40vh;
   margin: 10px 0px;
@@ -613,83 +581,78 @@ main .bloque_productos div .card_producto:hover {
   .titulo_marcas {
     font-size: 6vh;
   }
-  .bloque_marcas {
+  .Marcas {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .bloque_marcas img {
+  .Marcas img {
     width: 35%;
     height: 40vh;
   }
   /*Reseñas*/
-  .bloque_reseñas iframe {
+  .Reseñas iframe {
     width: 40%;
   }
 }
 /*Estilo de contacto*/
 /* Contacto */
-.bloque_0_formulario {
+.Formulario {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bloque_0_formulario h3 {
+.Formulario h3 {
   text-decoration: underline;
   font-size: 7vh;
   font-family: "Courier New", Courier, monospace;
 }
-.bloque_0_formulario .bloque_1_formulario {
+.Formulario div {
   text-align: center;
   border: 1px #22a884 solid;
   border-radius: 10px;
   width: 90%;
   padding: 2%;
 }
-.bloque_0_formulario .bloque_1_formulario .caja_texto {
+.Formulario div .caja_texto {
   width: 80%;
   height: 30px;
   margin: 5px;
 }
-.bloque_0_formulario .bloque_1_formulario .caja_texto:focus {
+.Formulario div .caja_texto:focus {
   border-radius: 5px;
   background-color: rgba(22, 219, 147, 0.2588235294);
   border: none;
 }
-.bloque_0_formulario .bloque_1_formulario .mensaje {
+.Formulario div .mensaje {
   height: 15vh;
 }
-.bloque_0_formulario .bloque_1_formulario .boton {
+.Formulario div .boton {
   border: 1px #22a884 solid;
   padding: 5px;
   background-image: linear-gradient(to bottom, #35ca74, #22a884);
   border-radius: 5px;
   color: white;
 }
-.bloque_0_formulario .bloque_1_formulario .boton:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 /* Ubicacion */
-.bloque_0_ubicacion {
+.Ubicacion {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bloque_0_ubicacion h3 {
+.Ubicacion h3 {
   text-decoration: underline;
   font-size: 7vh;
   font-family: "Courier New", Courier, monospace;
 }
-.bloque_0_ubicacion .bloque_1_ubicacion {
+.Ubicacion div {
   background-image: linear-gradient(to bottom, #0a919e, #0045ff);
   border-radius: 10px;
   padding: 3% 0px;
   text-align: center;
 }
-.bloque_0_ubicacion .bloque_1_ubicacion iframe {
+.Ubicacion div iframe {
   width: 95%;
   height: 50vh;
   border-radius: 12px;
@@ -700,14 +663,14 @@ main .bloque_productos div .card_producto:hover {
 /* Dispositivos medianos (desktop) */
 @media (min-width: 768px) {
   /* Contacto */
-  .bloque_0_formulario .bloque_1_formulario {
+  .Formulario div {
     width: 75%;
   }
   /* Ubicacion */
-  .bloque_0_ubicacion .bloque_1_ubicacion {
+  .Ubicacion div {
     width: 75%;
   }
-  .bloque_0_ubicacion .bloque_1_ubicacion iframe {
+  .Ubicacion div iframe {
     width: 85%;
     height: 50vh;
     border-radius: 12px;

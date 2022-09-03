@@ -1,30 +1,33 @@
 /*Index*/
 /*Header*/
-.bg-light {
-    background-color: black !important;
+.header {
+    .bg-light {
+        background-color: black !important;
 
-    .logo_header {
-        height: 9vh;
-    }
+        .header__logo {
+            height: 9vh;
+        }
 
-    .navbar-toggler-icon {
-        width: 33px;
-        height: 33px;
-        background-color: #CA054D;
-        border: 1px solid #CA054D;
-        border-radius: 5px;
-    }
+        .navbar-toggler-icon {
+            width: 33px;
+            height: 33px;
+            background-color: $color-principal;
+            border: 1px solid $color-principal;
+            border-radius: 5px;
+        }
 
-    .nav-link.active {
-        color: white !important;
-        font-family: 'Courier New', Courier, monospace;
-        background-color: black;
+        .nav-link.active {
+            color: white !important;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
 
-        &:hover {
-            color: #CA054D !important;
+            &:hover {
+                color: $color-principal !important;
+            }
         }
     }
 }
+
 
 /*------*/
 
@@ -32,18 +35,19 @@
 main {
 
     /* Bloque de cuidado de la piel */
-    .bloque_cuidado_piel {
+    .Cuidado-Piel {
         display: flex;
         flex-direction: column;
 
-        .texto_bloque_cuidado_piel {
+        &__texto {
             border: 1px #d4c9cd solid;
             border-radius: 12px;
             padding: 2px;
             background-color: #d4c9cd;
+            font-family: $letra-contenido;
         }
 
-        .lista_cuidado_piel {
+        &__lista {
             padding: 0px;
             display: flex;
             flex-direction: column;
@@ -54,18 +58,23 @@ main {
                 border: 1px #d4c9cd solid;
                 border-radius: 12px;
                 background-color: #d4c9cd;
+                font-family: $letra-contenido;
+            }
+            li h2{
+                font-family: $cursiva-especial;
+                font-size: 43px;
             }
         }
     }
 
     /* Bloque de datos  */
-    .bloque_datos {
+    .Datos {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
 
-        .dato {
+        &__card {
             margin: 10px 0px 10px 0px;
 
             &:hover {
@@ -75,23 +84,22 @@ main {
     }
 
     /* Bloque quienes somos */
-    .bloque_quienes_somos {
+    .Quienes-Somos {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .link_quienes_somos {
+        &__link {
             text-decoration: none;
             color: white;
-            background-color: #CA054D;
-            border: 1px #CA054D solid;
+            background-color: $color-principal;
+            border: 1px $color-principal solid;
             border-radius: 10px;
             padding: 5px;
 
             &:hover {
                 color: black;
-                transform: scale(1.1);
-                transition: 0.3s;
+                @extend %animacion-escala;
             }
         }
 
@@ -99,22 +107,21 @@ main {
             padding: 0px;
 
             &:hover {
-                transform: scale(1.05);
-                transition: 0.3s;
+                @extend %animacion-escala;
             }
         }
     }
 
     /* Bloque productos */
-    .bloque_productos {
+    .Ofertas {
         width: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: linear-gradient(to bottom, #CA054D, #ff006c);
+        background-image: $fondo-gradiente-rojo;
         border-radius: 10px;
 
-        .titulo_productos {
+        &__titulo {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin-top: 5px;
             color: white;
@@ -124,22 +131,18 @@ main {
         div {
             margin: 10px 0px 10px 0px;
 
-            .card_producto {
-                .link_producto {
-                    background-color: #CA054D;
-                    border-color: #CA054D;
+            .Ofertas__producto {
+                .Ofertas__link {
+                    @include estilo-link ($color-principal);
 
                     &:hover {
-                        border-color: #CA054D;
-                        background-color: #CA054D;
+                        @include estilo-link ($color-principal);  
                         color: black;
-                        transform: scale(1.1);
-                        transition: 0.3s;
+                        @extend %animacion-escala;
                     }
 
                     &:focus {
-                        border-color: #CA054D;
-                        background-color: #CA054D;
+                        @include estilo-link ($color-principal);
                     }
                 }
 
@@ -160,7 +163,7 @@ main {
     align-items: center;
     background-color: black;
 
-    .logo_footer {
+    &__logo {
         margin: 5px 0px;
         width: 50px;
         height: 50px;
@@ -191,8 +194,8 @@ main {
                 padding: 5px;
 
                 &:hover {
-                    border-color: #CA054D;
-                    color: #CA054D;
+                    border-color: $color-principal ;
+                    color:$color-principal ;
                 }
             }
         }
@@ -210,16 +213,16 @@ main {
 @media(min-width: 768px) {
 
     /*Header*/
-    header {
+    .header {
         .navbar-collapse {
             justify-content: flex-end;
         }
     }
 
     /* Bloque cuidado de la piel */
-    .bloque_cuidado_piel {
+    .Cuidado-Piel {
 
-        .lista_cuidado_piel {
+        &__lista {
             flex-direction: row !important;
             flex-wrap: nowrap;
 
@@ -234,6 +237,7 @@ main {
                     justify-content: space-around;
                     align-items: center;
                     height: 85px;
+                    font-size: 55px;
                 }
 
                 p {
@@ -247,17 +251,17 @@ main {
     }
 
     /* Bloque de datos  */
-    .bloque_datos {
+    .Datos {
         flex-direction: row !important;
         justify-content: space-between;
 
-        .dato {
+        &__card {
             margin: 10px !important;
         }
     }
 
     /* Bloque quienes somos */
-    .bloque_quienes_somos {
+    .Quienes-Somos {
         flex-direction: row !important;
         justify-content: space-between;
 
@@ -271,15 +275,6 @@ main {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
-
-                .link_quienes_somos {
-                    text-decoration: none;
-                    color: white;
-                    background-color: #CA054D;
-                    border: 1px #CA054D solid;
-                    border-radius: 10px;
-                    padding: 5px;
-                }
             }
         }
 
@@ -291,7 +286,7 @@ main {
     }
 
     /* Bloque productos */
-    .cards_productos {
+    .Ofertas__productos {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

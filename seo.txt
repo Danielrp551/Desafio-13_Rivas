@@ -1,0 +1,19 @@
+1 - Coloque etiquetas meta keywords en todos los htmls:
+index : cosmeticos, maquillaje, Wow Make Up, cuidado de la piel, cabello, rostro, mujer ;
+nosotros : Wow Make Up, maquillaje, quienes somos, historia, fundadores ;
+productos : Wow Make Up, productos, cosmeticos, maquillaje, shampoos, cremas, jabones;
+marcas : Wow Make Up, cosmeticos, maquillaje, marcas, reseñas;
+contacto : Wow Make Up, cosmeticos, maquillaje, contacto, atencion al cliente, ubicacion, locales;
+
+2- Coloque etiquetas meta description en todos los htmls:
+index : Wow Make Up es un emprendimiento de venta de cosmeticos y maquillaje a bajo precio enfocado en motivar el cuidado de la piel y el cabello.
+nosotros : Wow Make Up empieza su historia en dos amigas queriendo emprender en algo que les apasione y poniendo primero al cliente.
+productos : En Wow Make Up puedes encontrar productos de maquillaje y cuidado de la piel a bajo precio y de todo tipo de categoria o marca.
+marcas : Wow Make Up trabaja con diferentes marcas que tengan buenas reseñas para lograr tener una gran variedad y calidad de productos para sus clientes.
+contacto : Wow Make Up se encuentra en Lima, Perú en el distrito de Carabayllo y puedes contactarnos cuando quieras llenando nuestro formulario con tus datos.
+
+3- Cambie los titulos de todos los htmls añadiendoles " | Seccion " para que el usuario pueda guiarse de mejor manera.
+
+4- Agregue un mixind y par de extends ya que habia partes mi codigo scss que se repitian seguidamente, por lo cual de esta forma pude ahorrar un poco de codigo.
+
+5- Los colores, tipos de letra y gradientes que frecuentemente usaba en mi proyecto los volvi variables para poder usarlos facilmente. 

@@ -1,7 +1,16 @@
 
 /*Estilos de Wow Make Up*/
 
+@import './variables/colores';
+@import './variables/fuentes';
+@import './variables/extend-mixin';
+
+
+
+
+
 /*Estilo del index*/
+
 @import './secciones/index';
 /*Estilo de nosotros*/
 @import './secciones/nosotros';

@@ -1,0 +1,28 @@
+%estilo-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: $fondo-gradiente-rojo ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+%estilo-nosotros-card {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+%animacion-escala {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+@mixin estilo-link ($color) {
+    background-color: $color;
+    border-color: $color;
+}

@@ -1,6 +1,6 @@
 /* Contacto */
 
-.bloque_0_formulario {
+.Formulario {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -12,9 +12,9 @@
         font-family: 'Courier New', Courier, monospace;
     }
 
-    .bloque_1_formulario {
+    div {
         text-align: center;
-        border: 1px #22a884 solid;
+        border: 1px $verde-claro solid;
         border-radius: 10px;
         width: 90%;
         padding: 2%;
@@ -26,7 +26,7 @@
 
             &:focus {
                 border-radius: 5px;
-                background-color: #16db9342;
+                background-color: $verde-transparente ;
                 border: none;
             }
         }
@@ -36,15 +36,14 @@
         }
 
         .boton {
-            border: 1px #22a884 solid;
+            border: 1px $verde-claro solid;
             padding: 5px;
-            background-image: linear-gradient(to bottom, #35ca74, #22a884);
+            background-image: $fondo-gradiente-verde ;
             border-radius: 5px;
             color: white;
 
             &:hover {
-                transform: scale(1.05);
-                transition: 0.3s;
+                @extend %animacion-escala;
             }
         }
     }
@@ -52,7 +51,7 @@
 
 /* Ubicacion */
 
-.bloque_0_ubicacion {
+.Ubicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,8 +62,8 @@
         font-family: 'Courier New', Courier, monospace;
     }
 
-    .bloque_1_ubicacion {
-        background-image: linear-gradient(to bottom, #0a919e, #0045ff);
+    div {
+        background-image: $fondo-gradiente-azul ;
         border-radius: 10px;
         padding: 3% 0px;
         text-align: center;
@@ -84,16 +83,16 @@
 @media(min-width: 768px) {
     /* Contacto */
 
-    .bloque_0_formulario {
-        .bloque_1_formulario {
+    .Formulario {
+        div {
             width: 75%;
         }
     }
 
     /* Ubicacion */
 
-    .bloque_0_ubicacion {
-        .bloque_1_ubicacion {
+    .Ubicacion {
+        div {
             width: 75%;
 
             iframe {

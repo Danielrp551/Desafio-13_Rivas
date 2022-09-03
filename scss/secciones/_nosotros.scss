@@ -3,22 +3,11 @@
 /*Contenido*/
 
 /*Bloques nosotros*/
-.bloque_1_nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    background-image: linear-gradient(to bottom, #CA054D, #ff006c);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 10px;
+.Nosotros-1 {
+    @extend %estilo-nosotros;
 
-    .nosotros_card {
-        margin: 10px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    &__card {
+        @extend %estilo-nosotros-card;
 
         &:hover {
             box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
@@ -37,28 +26,16 @@
         padding: 0px;
 
         &:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
+            @extend %animacion-escala;
         }
     }
 }
 
-.bloque_2_nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    background-image: linear-gradient(to bottom, #CA054D, #ff006c);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 10px;
+.Nosotros-2 {
+    @extend %estilo-nosotros;
 
-    .nosotros_card {
-        margin: 10px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    &__card {
+        @extend %estilo-nosotros-card;
 
         &:hover {
             box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
@@ -77,24 +54,23 @@
         padding: 0px;
 
         &:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
+            @extend %animacion-escala;
         }
     }
 }
 
 /* Bloque Fundadoras */
-.bloque_fundadoras {
+.Fundadoras {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .titulo_fundadoras {
+    &__titulo {
         font-family: 'Courier New', Courier, monospace;
         font-size: 8vh;
     }
 
-    .fundadora {
+    &__card {
         margin-top: 10px;
 
         &:hover {
@@ -110,11 +86,11 @@
 @media(min-width: 768px) {
 
     /*Bloques nosotros*/
-    .bloque_1_nosotros {
+    .Nosotros-1 {
         flex-direction: row;
         justify-content: space-between;
 
-        .nosotros_card {
+        &__card {
             margin: 10px;
             width: 40%;
             height: 45vh;
@@ -127,11 +103,11 @@
         }
     }
 
-    .bloque_2_nosotros {
+    .Nosotros-2 {
         flex-direction: row-reverse;
         justify-content: space-between;
 
-        .nosotros_card {
+        &__card {
             margin: 10px;
             width: 40%;
             height: 45vh;
@@ -145,15 +121,15 @@
     }
 
     /* Bloque Fundadoras */
-    .bloque_fundadoras {
+    .Fundadoras {
 
-        .cards_fundadoras {
+        &__cards {
             display: flex;
             flex-direction: row;
             margin: 10px;
             justify-content: space-between;
 
-            .fundadora {
+            .Fundadoras__card {
                 width: 40%
             }
         }
@@ -165,10 +141,10 @@
 @media(min-width: 1024px) {
 
     /*Bloques nosotros*/
-    .bloque_1_nosotros {
+    .Nosotros-1 {
         justify-content: space-around;
 
-        .nosotros_card {
+        &__card {
             width: 35%;
             height: 30vh;
         }
@@ -179,10 +155,10 @@
         }
     }
 
-    .bloque_2_nosotros {
+    .Nosotros-2 {
         justify-content: space-around;
 
-        .nosotros_card {
+        &__card {
             width: 35%;
             height: 30vh;
         }

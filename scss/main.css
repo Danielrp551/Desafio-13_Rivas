@@ -59,6 +59,7 @@ main {
   /* Bloque productos */
 }
 main .Cuidado-Piel {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -91,6 +92,7 @@ main .Datos {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 main .Datos__card {
   margin: 10px 0px 10px 0px;
@@ -98,10 +100,14 @@ main .Datos__card {
 main .Datos__card:hover {
   box-shadow: 11px 15px 5px 0px rgba(0, 0, 0, 0.16);
 }
+main .Datos__card p {
+  font-family: "Kalam", cursive;
+}
 main .Quienes-Somos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 main .Quienes-Somos__link {
   text-decoration: none;
@@ -124,6 +130,7 @@ main .Ofertas {
   align-items: center;
   background-image: linear-gradient(to bottom, #CA054D, #ff006c);
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 main .Ofertas__titulo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -242,7 +249,7 @@ main .Ofertas div .Ofertas__producto:hover {
   }
   .Quienes-Somos .card {
     margin: 10px;
-    width: 40%;
+    width: 45%;
     height: 43vh;
   }
   .Quienes-Somos .card .card-body {
@@ -285,6 +292,9 @@ main .Ofertas div .Ofertas__producto:hover {
 /* NOSOTROS */
 /*Contenido*/
 /*Bloques nosotros*/
+.Nosotros-1 {
+  margin-top: 20px;
+}
 .Nosotros-1__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
 }
@@ -300,6 +310,9 @@ main .Ofertas div .Ofertas__producto:hover {
 }
 .Nosotros-1 img {
   padding: 0px;
+}
+.Nosotros-2 {
+  margin-bottom: 20px;
 }
 .Nosotros-2__card:hover {
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.39);
@@ -322,6 +335,7 @@ main .Ofertas div .Ofertas__producto:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 .Fundadoras__titulo {
   font-family: "Courier New", Courier, monospace;
@@ -410,6 +424,8 @@ main .Ofertas div .Ofertas__producto:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .Contenedor-Productos .Producto-Filtro {
   padding: 2%;
@@ -539,6 +555,7 @@ main .Ofertas div .Ofertas__producto:hover {
 /*Estilo de marcas*/
 /* Marcas */
 .titulo_marcas {
+  margin-top: 20px;
   text-decoration: underline;
   font-size: 8vh;
   text-align: center;
@@ -573,6 +590,7 @@ main .Ofertas div .Ofertas__producto:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 .Reseñas iframe {
   width: 90%;
@@ -610,11 +628,13 @@ main .Ofertas div .Ofertas__producto:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .Formulario h3 {
   text-decoration: underline;
   font-size: 7vh;
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
 }
 .Formulario div {
   text-align: center;
@@ -648,11 +668,14 @@ main .Ofertas div .Ofertas__producto:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .Ubicacion h3 {
   text-decoration: underline;
   font-size: 7vh;
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
 }
 .Ubicacion div {
   background-image: linear-gradient(to bottom, #0a919e, #0045ff);
@@ -677,9 +700,10 @@ main .Ofertas div .Ofertas__producto:hover {
   /* Ubicacion */
   .Ubicacion div {
     width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .Ubicacion div iframe {
-    width: 85%;
     height: 50vh;
     border-radius: 12px;
   }

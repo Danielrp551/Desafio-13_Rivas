@@ -36,6 +36,7 @@ main {
 
     /* Bloque de cuidado de la piel */
     .Cuidado-Piel {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
 
@@ -73,12 +74,16 @@ main {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        margin-bottom: 20px;
 
         &__card {
             margin: 10px 0px 10px 0px;
 
             &:hover {
                 box-shadow: 11px 15px 5px 0px rgb(0 0 0 / 16%);
+            }
+            p{
+                font-family: $letra-contenido;  
             }
         }
     }
@@ -88,6 +93,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
 
         &__link {
             text-decoration: none;
@@ -120,6 +126,7 @@ main {
         align-items: center;
         background-image: $fondo-gradiente-rojo;
         border-radius: 10px;
+        margin-bottom: 20px;
 
         &__titulo {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -267,7 +274,7 @@ main {
 
         .card {
             margin: 10px;
-            width: 40%;
+            width: 45%;
             height: 43vh;
 
             .card-body {
